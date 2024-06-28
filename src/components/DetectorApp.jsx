@@ -16,9 +16,9 @@ const DetectorApp = () => {
     }
 
     const detectedCode = franc(text);
-    
-    if(detectedCode){
-        setDetectedLangCode(detectedCode);
+
+    if (detectedCode) {
+      setDetectedLangCode(detectedCode);
     }
 
     const detectedLang = languageData.find(
@@ -62,11 +62,11 @@ const DetectorApp = () => {
             <h3 className="text-xl font-bold text-center mb-4 uppercase">
               Detected language
             </h3>
-            <p className="text-center bg-blue-400 p-4">
-              {detectedLanguage === "Language not found"
-                ? "Language not found"
-                : `The text seems to be : ${detectedLanguage} (${detectedLangCode})`}
-            </p>
+            {detectedLangCode ? (
+              <p className="text-center bg-green-400 p-5">
+                The text seems to be : {detectedLanguage} ({detectedLangCode})
+              </p>
+            ) : null}
           </div>
         </div>
       </div>
