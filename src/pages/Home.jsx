@@ -1,15 +1,14 @@
-import DetectorApp from '../components/DetectorApp'
-import HeroSection from '../components/HeroSection'
-import TranslatorApp from '../components/TranslatorApp'
+import AboutApp from "../components/AboutApp";
+import HeroSection from "../components/HeroSection";
+
 
 const Home = () => {
   return (
     <>
-    <HeroSection/>
-    <DetectorApp/>
-    <TranslatorApp/>
+      <HeroSection />
+      <AboutApp />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

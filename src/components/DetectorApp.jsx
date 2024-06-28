@@ -32,11 +32,33 @@ const DetectorApp = () => {
     }
   };
 
+  const addRandomText = () => {
+    const randomTexts = [
+      "Hello, how are you?",
+      "Hola, ¿cómo estás?",
+      "Bonjour, comment ça va?",
+      "Hallo, wie geht's?",
+      "Ciao, come stai?",
+      "Привет, как дела?",
+      "こんにちは、元気ですか？",
+      "你好，你好吗？",
+      "مرحبًا، كيف حالك؟",
+      "नमस्ते, क्या हाल है?",
+      "ಹಲೋ, ಹೇಗಿದ್ದೀರಾ?",
+      "வணக்கம், எப்படி இருக்கிறீர்கள்?",
+    ];
+
+    setText(randomTexts[Math.floor(Math.random() * randomTexts.length)]);
+  };
+
   return (
-    <section className="detector-app center p-4">
+    <section className="detector-app bg-slate-950 text-white center p-4">
       <div className="container p-6">
         <div className="detector-app-content my-6">
-          <h2 className="text-2xl font-bold text-center mb-4 uppercase">
+          <h1 className="app-name my-3 text-2xl font-bold uppercase">
+            Language Detector
+          </h1>
+          <h2 className="text-2xl  mb-4 uppercase">
             Detect the language of any text
           </h2>
           <form onSubmit={detectLanguage} className="detector-form">
@@ -47,25 +69,35 @@ const DetectorApp = () => {
                 name="text"
                 id="text"
                 rows="10"
-                className="input p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                className="input p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 text-black"
                 placeholder="Enter text to detect language"
               ></textarea>
             </div>
-            <button
-              type="submit"
-              className="btn bg-blue-700 p-2 px-4 text-white mt-4 uppercase hover:bg-blue-800 rounded"
-            >
-              Identify!
-            </button>
+            <div className="btns flex space-x-2">
+              <button
+                type="submit"
+                className="btn bg-blue-700 p-2 px-4 text-white mt-4 uppercase hover:bg-blue-800 rounded"
+              >
+                Identify !
+              </button>
+              <button
+                className="btn bg-blue-700 p-2 px-4 text-white mt-4 uppercase hover:bg-blue-800 rounded"
+                onClick={addRandomText}
+              >
+                Try some text !
+              </button>
+            </div>
           </form>
           <div className="detector-result">
-            <h3 className="text-xl font-bold text-center mb-4 uppercase">
-              Detected language
-            </h3>
             {detectedLangCode ? (
-              <p className="text-center bg-green-400 p-5">
-                The text seems to be : {detectedLanguage} ({detectedLangCode})
-              </p>
+              <>
+                <h3 className="text-xl font-bold text-center my-4">
+                  Detected language !
+                </h3>
+                <p className="text-center bg-green-950 p-5">
+                  The text seems to be: {detectedLanguage} ({detectedLangCode})
+                </p>
+              </>
             ) : null}
           </div>
         </div>

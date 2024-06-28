@@ -7,15 +7,17 @@ const TranslatorApp = () => {
   const [translatedText, setTranslatedText] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState("en");
   const [loading, setLoading] = useState(false);
+  const uri = import.meta.env.VITE_API_URI;
+  const key = import.meta.env.VITE_API_KEY;
 
   const translate = async (event) => {
     event.preventDefault();
     setLoading(true);
     const options = {
       method: "POST",
-      url: "https://google-translate113.p.rapidapi.com/api/v1/translator/text",
+      url: uri,
       headers: {
-        "x-rapidapi-key": "a0bc5e443dmsh7ce9af6af9d0572p16e696jsn12a7e8d3ec5a",
+        "x-rapidapi-key": key,
         "x-rapidapi-host": "google-translate113.p.rapidapi.com",
         "Content-Type": "application/json",
       },
