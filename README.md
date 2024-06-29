@@ -35,8 +35,8 @@ To get a copy of the project up and running on your local machine, follow these 
    npm start
 
 ## Usage
-Enter text into the input field.
-Select the target language from the dropdown menu.
-Click the "Translate" button to instantly translate the text.
+1. Enter text into the input field.
+2. Select the target language from the dropdown menu.
+3. Click the "Translate" button to instantly translate the text.
 
    
