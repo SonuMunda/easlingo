@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <>
@@ -61,12 +63,20 @@ const About = () => {
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Have questions, feedback, or suggestions? We&apos;d love to hear from
-                you! Reach out to us at{" "}
-                <a href="mailto:email@example.com" className="text-blue-500">
+                Have questions, feedback, or suggestions? We&apos;d love to hear
+                from you! Reach out to us at &nbsp;
+                <Link to="mailto:email@example.com" className="text-blue-500">
                   sonumunda1312@gmail.com
-                </a>
-                and let&apos;s connect.
+                </Link>
+                &nbsp; and let&apos;s connect.
+              </p>
+              <p className="">
+                <Link
+                  to="/https://github.com/SonuMunda/easlingo.git"
+                  className="text-blue-500"
+                >
+                  Click here to view the code
+                </Link>
               </p>
             </div>
           </div>

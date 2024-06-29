@@ -47,7 +47,7 @@ const TranslatorApp = () => {
         </div>
       </section>
       <section className="translator-app center bg-slate-950 text-white px-6 min-h-screen py-10">
-        <div className="container p-6">
+        <div className="container p-6 max-w-4xl">
           <div className="translator-app-content">
             <h1 className="app-name my-10 text-2xl font-bold uppercase center">
               Language Translator

@@ -60,7 +60,7 @@ const DetectorApp = () => {
         </div>
       </section>
       <section className="detector-app bg-slate-950 text-white center p-4 min-h-screen">
-        <div className="container p-6">
+        <div className="container max-w-4xl p-6">
           <div className="detector-app-content my-6">
             <h1 className="app-name my-3 text-2xl font-bold uppercase">
               Language Detector
