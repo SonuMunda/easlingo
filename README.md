@@ -1,35 +1,42 @@
-#EasLingo
+# EasLingo
 
-Language Detector and Translator Application
+## Language Detector and Translator Application
 
-#Overview
+EasLingo is a web application designed to detect and translate text between languages in real-time. It utilizes React JS for the frontend and is styled using Tailwind CSS. Language detection is powered by the France library, while translation capabilities are enabled through the Google Translate API via Rapid API.
 
-EasLingo is a web application that detects and translates text between languages in real-time. Built with React JS and styled with Tailwind CSS, EasLingo utilizes the France library for language detection and the Google Translate API (via Rapid API) for translation capabilities.
+## Features
 
-#Features
+- **Language Detection:** Automatically identifies the language of input text using the France library.
+- **Translation:** Translates text between languages using the Google Translate API.
+- **Real-time Translation:** Translates text dynamically as you type.
+- **User-Friendly Interface:** Intuitive interface for easy language detection and translation.
 
-- Language Detection: Automatically detect the language of input text using France library
-- Translation: Translate text between languages using Google Translate API
-- Real-time Translation: Translate text as you type
-- User-Friendly Interface: Easy-to-use interface for language detection and translation
+## Technologies Used
 
-#Technologies Used
+- **Frontend:** React JS
+- **Styling:** Tailwind CSS
+- **Language Detection:** France library
+- **Translation API:** Google Translate API (via Rapid API)
 
-- Frontend: React JS
-- Styling: Tailwind CSS
-- Language Detection: France library
-- Translation API: Google Translate API (via Rapid API)
+## Getting Started
 
-#Getting Started
+To get a copy of the project up and running on your local machine, follow these steps:
 
-- Clone the repository: `git clone ([link](https://github.com/SonuMunda/easlingo/))
-- Install dependencies: npm install
-- Start the application: npm start
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/SonuMunda/easlingo/
+   
+2. **Install Dependency:**
+   ```bash
+   npm install
+   
+3. **Start the application:y:**
+   ```bash
+   npm start
 
-#Usage
+## Usage
+Enter text into the input field.
+Select the target language from the dropdown menu.
+Click the "Translate" button to instantly translate the text.
 
-- Input text in the input field
-- Select the target language from the dropdown menu
-- Click the "Translate" button to translate the text
-
-
+   
