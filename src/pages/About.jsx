@@ -6,7 +6,7 @@ const About = () => {
     <>
       <AppHero title="About Us" />
       <section className="about center bg-gray-800">
-        <div className=" container bg-transparent text-gray-300  p-4">
+        <div className=" container max-w-6xl bg-transparent text-gray-300  p-4">
           <p className="text-lg text-gray-400 leading-relaxed mb-6">
             Welcome to EasLingo, your essential language detection and
             translation application, meticulously crafted with React.js and

@@ -54,7 +54,7 @@ const DetectorApp = () => {
   return (
     <>
       <AppHero title={"Language Detector"} />
-      <section className="h-dvh bg-gray-900">
+      <section className="h-dvh center bg-gray-900">
         <div className="container max-w-4xl p-5">
           <div className="detector-app-content my-6">
             <h2 className="text-2xl text-gray-400  mb-4">
