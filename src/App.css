@@ -1,0 +1,31 @@
+
+
+@keyframes backgroundSlide {
+  0% {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/hv-partner-data-collection-dev.appspot.com/o/background-images%2FAuth_Bg_1.png?alt=media&token=37af2a04-3db1-47a3-b94f-fb926d21b3ae");
+  }
+ 
+  25% {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/hv-partner-data-collection-dev.appspot.com/o/background-images%2FAuth_Bg_2.png?alt=media&token=de498f6e-2103-41ad-a852-0d2e5e312486");
+  }
+
+  50% {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/hv-partner-data-collection-dev.appspot.com/o/background-images%2FAuth_Bg_3.png?alt=media&token=4c1c7d06-09ee-48c8-a3d7-ffec91fa743e");
+  }
+
+  75% {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/hv-partner-data-collection-dev.appspot.com/o/background-images%2FAuth_Bg_4.png?alt=media&token=0a47f838-992a-40b9-9c4b-d8a12f384351");
+  }
+ 
+  100% {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/hv-partner-data-collection-dev.appspot.com/o/background-images%2FAuth_Bg_1.png?alt=media&token=37af2a04-3db1-47a3-b94f-fb926d21b3ae");
+  }
+}
+
+.background-slideshow {
+  animation: backgroundSlide 12s infinite;
+  animation-timing-function: ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { franc } from "franc";
 import languageData from "../api/languageData";
+import AppHero from "./AppHero";
 
 const DetectorApp = () => {
   const [text, setText] = useState("");
@@ -52,21 +53,12 @@ const DetectorApp = () => {
 
   return (
     <>
-      <section className="bg-gradient-to-r from-blue-500 to-purple-500 py-20">
-        <div className="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center">
-          <h1 className="text-5xl font-bold text-white mb-4 leading-tight">
-            Language Detector
-          </h1>
-        </div>
-      </section>
-      <section className="detector-app bg-slate-950 text-white center p-4 min-h-screen">
-        <div className="container max-w-4xl p-6">
+      <AppHero title={"Language Detector"} />
+      <section className="h-dvh bg-gray-900">
+        <div className="container max-w-4xl p-5">
           <div className="detector-app-content my-6">
-            <h1 className="app-name my-3 text-2xl font-bold uppercase">
-              Language Detector
-            </h1>
-            <h2 className="text-2xl  mb-4 uppercase">
-              Detect the language of any text
+            <h2 className="text-2xl text-gray-400  mb-4">
+              Enter some text to detect the language or try some random text
             </h2>
             <form onSubmit={detectLanguage} className="detector-form">
               <div className="form-control">
@@ -76,7 +68,7 @@ const DetectorApp = () => {
                   name="text"
                   id="text"
                   rows="10"
-                  className="input p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 text-black"
+                  className="input p-2 w-full bg-gray-800 border border-gray-600 rounded-md focus:outline-none focus:border-blue-500 text-gray-400"
                   placeholder="Enter text to detect language"
                 ></textarea>
               </div>
@@ -98,10 +90,10 @@ const DetectorApp = () => {
             <div className="detector-result">
               {detectedLangCode ? (
                 <>
-                  <h3 className="text-xl font-bold text-center my-4">
+                  <h3 className="text-xl text-gray-400 font-bold mt-10 mb-5">
                     Detected language !
                   </h3>
-                  <p className="text-center bg-green-950 p-5">
+                  <p className="text-gray-200 bg-green-600 rounded p-5">
                     The text seems to be: {detectedLanguage} ({detectedLangCode}
                     )
                   </p>
